@@ -1,0 +1,22 @@
+.button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+
+    color: var(--white-cl);
+    background: var(--accent-txt-cl);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color var(--dur-tf);
+
+    &:hover,
+    &:focus {
+            background-color: var(--secondary-accent);
+        }
+}
+
+
