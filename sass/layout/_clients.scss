@@ -1,0 +1,40 @@
+
+.client__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color var(--dur-tf), background-color var(--dur-tf);
+    width: 170px;
+    height: 92px;
+    background-color: var(--white-cl);
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border var(--dur-tf);
+
+
+    /* outline: 2px solid tomato; */
+}
+
+
+
+.client__icon {
+    fill: #afb1b8;
+    transition: fill var(--dur-tf);
+}
+
+.client__link:hover,
+.client__link:focus {
+    border: 1px solid var(--accent-txt-cl);
+}
+
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
+    fill: var(--accent-txt-cl);
+
+}

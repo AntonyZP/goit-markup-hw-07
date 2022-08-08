@@ -1,0 +1,21 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    background-color: var(--white-cl);
+    border-bottom-color: #ececec;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__logo {
+    margin-right: 93px;
+}

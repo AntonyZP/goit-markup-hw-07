@@ -10,9 +10,26 @@
 // components styles
 @import './components/container';
 @import './components/section';
+@import './components/logo';
 @import './components/buttons';
+@import './components/filter';
+@import './components/titles';
 @import './components/modal-window';
 @import './components/modal-form';
 @import './components/contacts-form';
 @import './components/socials';
+
+// layout styles
+@import './layout/header';
+@import './layout/nav';
+@import './layout/contacts-header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/projects';
+@import './layout/footer';
+
+
 

@@ -1,0 +1,71 @@
+.footer {
+    color: var(--footer-cl);
+    background-color: var(--footer-bg-cl);
+}
+
+.footer__logo {
+    display: inline-block;
+
+    margin-bottom: 20px;
+}
+
+.footer__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-contact {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-contact__address {
+    color: var(--white-cl);
+}
+
+
+.footer-contact__address,
+.footer-contact__mail,
+.footer-contact__phone {
+    transition: color var(--dur-tf)
+}
+
+.footer-contact__address:hover,
+.footer-contact__mail:hover,
+.footer-contact__phone:hover,
+.footer-contact__address:focus,
+.footer-contact__mail:focus,
+.footer-contact__phone:focus {
+    color: var(--accent-txt-cl);
+}
+
+
+.footer-contact__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer__join {
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.footer__subtitle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-cl);
+}
+
+.footer__join .socials__link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer__join .social__icon {
+    fill: var(--white-cl);
+}
