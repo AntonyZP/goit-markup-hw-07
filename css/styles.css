@@ -78,8 +78,7 @@ p {
   font-style: normal;
 }
 
-.list,
-.projects-list {
+.list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -111,10 +110,8 @@ p {
 }
 
 
-
-
-
 /* logo styles */
+
 .header__logo,
 .footer__logo {
   font-family: var(--secondary-font);
@@ -137,7 +134,6 @@ p {
 .logo__studio-footer {
   color: var(--white-cl);
 }
-
 
 
 
@@ -167,8 +163,8 @@ p {
   margin-right: 93px;
 }
 
-.header__nav,
-.header__contact {
+.nav,
+.contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -221,7 +217,7 @@ p {
   margin-right: 50px;
 }
 
-.header__contact {
+.contact {
   margin-left: auto;
   display: flex;
   color: var(--secondary-txt-cl);
