@@ -27,20 +27,14 @@
 }
 
 
-.footer-contact__address,
-.footer-contact__mail,
-.footer-contact__phone {
-    transition: color var(--dur-tf)
-}
 
-.footer-contact__address:hover,
-.footer-contact__mail:hover,
-.footer-contact__phone:hover,
-.footer-contact__address:focus,
-.footer-contact__mail:focus,
-.footer-contact__phone:focus {
-    color: var(--accent-txt-cl);
-}
+.footer-contact .link {
+    transition: color var(--dur-tf);
+
+    &:hover,
+    &:focus {color: var(--accent-txt-cl);
+        }         
+    }
 
 
 .footer-contact__item:not(:last-child) {

@@ -29,8 +29,6 @@
         }
 }
 
-
-
 .form-label {
     display: block;
     text-align: left;
@@ -42,8 +40,7 @@
     color: var(--secondary-txt-cl);
 }
 
-.form-input,
-.form-message {
+.form-input {
     padding: 11px;
     padding-left: 42px;
     height: 40px;
@@ -54,12 +51,25 @@
     transition: border var(--dur-tf);
 
     outline: transparent;
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-txt-cl);
+        }
 }
 
 .form-message {
     padding: 12px 16px;
     height: 120px;
     resize: none;
+  
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+        
+    transition: border var(--dur-tf);
+        
+    outline: transparent;
 
     &::placeholder {
         font-size: 12px;
@@ -67,9 +77,12 @@
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5)
     }
+    
+    &:focus,
+    &:hover {
+        border: 1px solid var(--accent-txt-cl);
+    }
 }
-
-
 
 .form-icon {
     position: absolute;
@@ -78,22 +91,11 @@
 
     transition: fill var(--dur-tf);
 
-}
+    .form-input:focus+&,
+    .form-input:hover+& {
+        fill: #188ce8;
+    }
 
-
-.form-input:focus,
-.form-input:hover {
-    border: 1px solid var(--accent-txt-cl);
-}
-
-.form-input:focus+.form-icon,
-.form-input:hover+.form-icon {
-    fill: #188ce8;
-}
-
-.form-message:focus,
-.form-message:hover {
-    border: 1px solid var(--accent-txt-cl);
 }
 
 .modal-form-agreement {
@@ -105,21 +107,20 @@
     cursor: pointer;
 }
 
-.form-checkbox:checked+.agreement-icon .agreement-icon-uncheck {
-    opacity: 0;
-    transition: opacity var(--dur-tf);
-}
 
 .agreement-icon-check {
     opacity: 0;
     transition: opacity var(--dur-tf);
+
+    .form-checkbox:checked+.agreement-icon & {
+        opacity: 0;
+        transition: opacity var(--dur-tf);
+    }
+
+    .form-checkbox:checked+.agreement-icon & {
+        opacity: 1;
+    }
 }
-
-.form-checkbox:checked+.agreement-icon .agreement-icon-check {
-    opacity: 1;
-}
-
-
 
 .form-agreement-text {
     font-weight: 400;

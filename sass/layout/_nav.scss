@@ -21,28 +21,32 @@
     display: block;
     padding: 32px 0;
     transition: color var(--dur-tf);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        }
+
+    &--current {
+        position: relative;
+        color: var(--accent-txt-cl);
+        /* outline: 1px solid tomato; */
+        }
+    &--current::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        display: block;
+        width: 100%;
+        height: 4px;
+
+        background-color: var(--accent-txt-cl);
+        border-radius: 2px;
+    }
+
 }
 
-.nav__link:hover,
-.nav__link:focus {
-    color: var(--accent-txt-cl);
-}
 
-.nav__link--current {
-    position: relative;
-    color: var(--accent-txt-cl);
-    /* outline: 1px solid tomato; */
-}
 
-.nav__link--current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    display: block;
-    width: 100%;
-    height: 4px;
 
-    background-color: var(--accent-txt-cl);
-    border-radius: 2px;
-}
