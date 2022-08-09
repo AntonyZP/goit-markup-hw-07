@@ -1,3 +1,3 @@
-const { height: pageHeaderHeight } = document.querySelector('.page-header').getBoundingClientRect();
+const { height: headerHeight } = document.querySelector('.header').getBoundingClientRect();
 
-document.body.style.paddingTop = `${pageHeaderHeight}px`;
+document.body.style.paddingTop = `${headerHeight}px`;
