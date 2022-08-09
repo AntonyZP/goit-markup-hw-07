@@ -28,14 +28,22 @@
     fill: currentColor;
 }
 
-.contact__phone,
+.contact__phone {
+    transition: color var(--dur-tf), background-color var(--dur-tf);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+         }
+    }
+
 .contact__mail {
     transition: color var(--dur-tf), background-color var(--dur-tf);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-txt-cl);
+        }
 }
 
-.contact__phone:hover,
-.contact__mail:hover,
-.contact__phone:focus,
-.contact__mail:focus {
-    color: var(--accent-txt-cl);
-}
+

@@ -10,13 +10,14 @@
     background: rgba(0, 0, 0, 0.2);
 
     transition: opacity 500ms ease-in, visibility 500ms ease-in;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        }
 }
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
 
 .modal {
     position: absolute;
@@ -33,12 +34,13 @@
     border-radius: 4px;
     transition: transform 400ms ease-in-out 200ms, opacity 400ms ease-in-out 200ms;
 
+    .backdrop.is-hidden & {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.2);
+        }
 }
 
-.backdrop.is-hidden .modal {
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(0.2);
-}
+
 
 .modal-button-close {
     position: absolute;
@@ -63,12 +65,12 @@
 .modal-button-close-icon {
     fill: #000000;
     transition: fill var(--dur-tf);
+
+    .modal-button-close:hover &,
+    .modal-button-close:focus & {
+         fill: var(--accent-txt-cl);
+        }
 }
 
 
 
-.modal-button-close:hover .modal-button-close-icon,
-.modal-button-close:focus .modal-button-close-icon {
-    fill: var(--accent-txt-cl);
-    ;
-}
